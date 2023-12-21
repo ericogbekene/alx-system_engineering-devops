@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+: "bash sript to display Best school using while loop
+"
+
+count=0
+
+while [ $count -lt 10 ]; do
+	echo "Best SChool"
+	((count++))
+done
+
