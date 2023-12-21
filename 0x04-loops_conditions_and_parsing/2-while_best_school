@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-: "bash sript to display Best school using while loop
-"
+#bash sript to display Best school using while loop
 
 count=0
 
