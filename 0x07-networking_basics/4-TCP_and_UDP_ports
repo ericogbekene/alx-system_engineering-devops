@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#script to return all ports LISTENING and their PID
+ss -ltnp

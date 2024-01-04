@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#script to ping a network IP address
 
 count=1
 
