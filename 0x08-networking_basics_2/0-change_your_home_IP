@@ -1,4 +1,4 @@
-#!/us/bin/env bash
+#!/usr/bin/env bash
 #script to configure an Ubuntu server with requrements
 
 cp /etc/hosts ~/hosts.newfile
