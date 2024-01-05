@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #script to configure an Ubuntu server with requrements
 
-echo "127.0.0.2	localhots" > sudo tee -a /etc/hosts
+echo "127.0.0.2	localhost" > sudo tee -a /etc/hosts
 
 echo "8.8.8.8	facebook.com" >> sudo tee -a /etc/hosts
