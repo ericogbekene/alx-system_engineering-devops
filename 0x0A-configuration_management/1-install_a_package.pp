@@ -1,4 +1,6 @@
+# Manifest file to install flask
+
 package { 'flask':
-	require => 'installed',
-	version => '2.1.0'
-	}
+  ensure	=> 'installed',
+  require	=> Exec['apt-get update']
+}
