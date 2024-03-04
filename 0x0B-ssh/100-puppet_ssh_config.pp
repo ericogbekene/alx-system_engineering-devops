@@ -1,6 +1,6 @@
 # configuring ssh config file using puppet
 
-file_resource { 'no password':
+file_line { 'no password':
   ensure => 'present',
   path   => 'etc/ssh/ssh_config',
   line   => '	PasswordAuthentication no',
