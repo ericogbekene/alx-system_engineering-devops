@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# configure nginx server
+
+# ssh into server
+ssh -i ~/.ssh/id_rsa ubuntu@100.25.141.225
+
+sudo apt-get update
+sudo apt-get install nginx
+
+sudo ufw allow 'Nginx HTTP'
