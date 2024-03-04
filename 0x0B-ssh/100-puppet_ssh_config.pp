@@ -3,7 +3,7 @@
 file_resource { 'no password':
   ensure => 'present',
   path   => 'etc/ssh/ssh_config',
-  line   => '	PasswordAuthentication no'
+  line   => '	PasswordAuthentication no',
 }
 
 file_line { 'Declare identity file':
