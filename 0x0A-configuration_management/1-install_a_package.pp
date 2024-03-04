@@ -1,6 +1,8 @@
 # Manifest file to install flask
 
-package { 'flask':
-  ensure	=> 'installed',
-  require	=> Exec['apt-get update']
+exec { 'flask':
+  ensure  => '2.1.0',
+  command => 'pip3 install flask',
+  path    => '/usr/local/bin:/usr/bin:/bin'
+
 }
