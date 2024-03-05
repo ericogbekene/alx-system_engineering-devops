@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# script explainng how this script sets up nginx
+# and adds a custom heade X-Served-BY
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
