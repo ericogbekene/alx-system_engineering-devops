@@ -1,0 +1,20 @@
+index index.html index.htm index.nginx-debian.html;
+
+server_name ericogbekene.tech;
+
+location /hbnb_static {
+                # First attempt to serve request as file, then
+                
+                alias /data/web_static/current/;
+        }
+
+location /airbnb-onepage/ {
+
+                alias /web_flask/0-hello_route.py;
+                proxy_pass http://0.0.0.0:5000/airbnb-onepage/;
+                proxy_redirect off;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+
+        }
+
