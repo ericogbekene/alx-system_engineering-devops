@@ -9,7 +9,7 @@ def number_of_subscribers(subreddit):
     function to query reddit endpoint
     """
 
-    new_url = f'https://www.reddit.com//r/{subreddit}/about.json'
+    new_url = f'https://www.reddit.com/r/{subreddit}/about.json'
     headers = {'User-Agent': 'Eric O'}
 
     try:
@@ -21,7 +21,3 @@ def number_of_subscribers(subreddit):
         return (count)
     except Exception as e:
         print(e)
-
-
-if __name__ == '__main__':
-    number_of_subscribers(subreddit='programming')
